@@ -9,7 +9,7 @@ export class ProfileNameComponent implements OnInit {
   @Input() firstName: string;
   @Input() lastName: string;
   @Input() imageUrl: string;
-  @Input() rotatedMode = false;
+  @Input() rotatedMode: boolean;
 
   constructor() { }
 

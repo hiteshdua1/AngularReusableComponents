@@ -1,10 +1,10 @@
 <span class="profile-name">
-<span [ngClass]="{'vertical-flex': rotatedMode}">
-    <img [src]="imageUrl" class="profle-image" [ngClass]="{'rotate-image flex order2': rotatedMode}"/>
+<span class="flex" [ngClass]="{'vertical-flex': rotatedMode}">
+    <img [src]="imageUrl" class="profile-image" [ngClass]="{'rotated-image order2':rotatedMode}">
     <span class="name" [ngClass]="{'order1 rotate': rotatedMode}">
       <span>{{firstName}}</span>
       <br *ngIf="rotatedMode">
-      <span>{{lastName}}</span>
+      <span> {{lastName}}</span>
     </span>
   </span>
 </span>
