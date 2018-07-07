@@ -1,0 +1,42 @@
+.profile-image {
+    height: 2rem;
+    width: 2rem;
+}
+
+.rotated-image {
+    height: 4rem;
+    width: 4rem;
+}
+
+.name {
+    text-align: center;
+    padding-left: 0.5rem;
+    align-self: center;
+}
+
+.rotate {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-top: 0.5rem;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.profile-name {
+    display: inline-flex;
+    align-self: center;
+}
+
+.flex {
+    display: inline-flex;
+}
+
+.vertical-flex {
+    flex-direction: column;
+}
