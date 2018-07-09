@@ -3,7 +3,6 @@ import { ProfileNameComponent } from './profile-name.component';
 
 export default sandboxOf(ProfileNameComponent)
   .add('Profile Name Component (Default)', {
-    // tslint:disable-next-line:max-line-length
     template: `<profile-name
     firstName="Hitesh"
     lastName="Dua"
@@ -13,7 +12,6 @@ export default sandboxOf(ProfileNameComponent)
     </profile-name>`
   })
   .add('Profile Name Component (Rotated)', {
-    // tslint:disable-next-line:max-line-length
     template: `<profile-name
     firstName="Hitesh"
     lastName="Dua"
