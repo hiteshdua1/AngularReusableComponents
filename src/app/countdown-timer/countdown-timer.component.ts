@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'countdown-timer',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountdownTimerComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
-
 }
