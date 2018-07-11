@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { ProfileNameComponent } from './profile-name/profile-name.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { ProjectsCardComponent } from './projects-card/projects-card.component';
+import { StepCounterComponent } from './step-counter/step-counter.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ProjectsCardComponent } from './projects-card/projects-card.component';
     AboutComponent,
     ProfileNameComponent,
     CountdownTimerComponent,
-    ProjectsCardComponent
+    ProjectsCardComponent,
+    StepCounterComponent
   ],
   imports: [
     BrowserModule
