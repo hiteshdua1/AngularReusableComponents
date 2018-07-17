@@ -7,9 +7,9 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class LiveCodeComponent implements OnInit {
 
-  @ViewChild('style-tag') elStyleTag: HTMLElement;
-  @ViewChild('style-text') elStyleText: HTMLElement;
+  @ViewChild('styletag') elStyleTag: ElementRef;
 
+  elStyle: any;
   styles = `
   body {
     background-color: red;
@@ -26,13 +26,18 @@ export class LiveCodeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const head = document.getElementsByTagName('head')[0];
+    this.elStyle = document.createElement('style');
+    this.elStyle.type = 'text/css';
+    head.appendChild(this.elStyle);
+
     this.writeStyles(this.styles, 0, 16);
   }
 
   writeStyleChar(which) {
-    this.styles = this.elStyleText.innerHTML + which;
-    this.elStyleText.innerHTML = this.styles;
-    this.elStyleTag.innerHTML += which;
+    this.styles = this.elStyle.innerHTML + which;
+    this.elStyle.innerHTML = this.styles;
+    this.elStyleTag.nativeElement.innerHTML += which;
   }
 
   writeStyles(message, index, interval) {
