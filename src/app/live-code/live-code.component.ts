@@ -12,16 +12,53 @@ export class LiveCodeComponent implements OnInit {
   elStyle: any;
   styles = `
   body {
-    background-color: red;
-    color: white;
+    margin: 0 auto;
+    max-width: 50em;
 
-    background: green;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #555;
 
-    background: blue;
+    line-height: 1.5;
+    padding: 4em 1em;
+  }
 
-    background: yellow;
-    background: black;
-  }`;
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+  code,
+  pre {
+    background: #eee;
+  }
+
+  code {
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+  }
+
+  pre {
+    padding: 1em;
+  }
+
+  a {
+    color: #e81c4f;
+  }
+  body {
+    color: #566b78;
+  }
+
+  code,
+  pre {
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+  }
+
+  pre {
+    border-left: 2px solid #69c;
+  }
+
+  `;
 
   constructor() { }
 
