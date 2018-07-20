@@ -1,8 +1,10 @@
 import { sandboxOf } from 'angular-playground';
 import { ProfileNameComponent } from './profile-name.component';
 
-export default sandboxOf(ProfileNameComponent)
-  .add('Profile Name Component (Default)', {
+export default sandboxOf(ProfileNameComponent,
+  { label: 'Profile Name Component' }
+)
+  .add('Default', {
     template: `<profile-name
     firstName="Hitesh"
     lastName="Dua"
@@ -11,7 +13,7 @@ export default sandboxOf(ProfileNameComponent)
     >
     </profile-name>`
   })
-  .add('Profile Name Component (Rotated)', {
+  .add('Rotated', {
     template: `<profile-name
     firstName="Hitesh"
     lastName="Dua"
