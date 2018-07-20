@@ -30,6 +30,11 @@ h1 {
   padding: 2rem;
 }
 
+.typing-style {
+    overflow: scroll;
+    position: fixed;
+}
+
 .bird {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
   background-size: auto 100%;
