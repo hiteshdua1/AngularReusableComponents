@@ -8,6 +8,7 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { ProjectsCardComponent } from './projects-card/projects-card.component';
 import { StepCounterComponent } from './step-counter/step-counter.component';
 import { LiveCodeComponent } from './live-code/live-code.component';
+import { BooksCardComponent } from './books-card/books-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LiveCodeComponent } from './live-code/live-code.component';
     CountdownTimerComponent,
     ProjectsCardComponent,
     StepCounterComponent,
-    LiveCodeComponent
+    LiveCodeComponent,
+    BooksCardComponent
   ],
   imports: [
     BrowserModule
