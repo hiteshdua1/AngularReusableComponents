@@ -10,6 +10,7 @@ import { StepCounterComponent } from './step-counter/step-counter.component';
 import { LiveCodeComponent } from './live-code/live-code.component';
 import { BooksCardComponent } from './books-card/books-card.component';
 import { ActivityStreakComponent } from './activity-streak/activity-streak.component';
+import { ContentMarkdownComponent } from './content-markdown/content-markdown.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ActivityStreakComponent } from './activity-streak/activity-streak.compo
     StepCounterComponent,
     LiveCodeComponent,
     BooksCardComponent,
-    ActivityStreakComponent
+    ActivityStreakComponent,
+    ContentMarkdownComponent
   ],
   imports: [
     BrowserModule
