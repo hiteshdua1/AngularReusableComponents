@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+#Learning Angular
+Checklist to create a custom form control (in Angular), we should make sure that:
+
+- It properly propagates changes to the DOM/View
+- It properly propagates changes to the Model
+- It comes with custom validation if needed
+- It adds validity state to the DOM so it can be styled
+- It’s accessible
+- It works with template-driven forms
+- It works with model-driven forms
+- It needs to be responsive
