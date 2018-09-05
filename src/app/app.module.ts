@@ -11,6 +11,7 @@ import { LiveCodeComponent } from './live-code/live-code.component';
 import { BooksCardComponent } from './books-card/books-card.component';
 import { ActivityStreakComponent } from './activity-streak/activity-streak.component';
 import { ContentMarkdownComponent } from './content-markdown/content-markdown.component';
+import { StackoverflowBadgeComponent } from './stackoverflow-badge/stackoverflow-badge.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContentMarkdownComponent } from './content-markdown/content-markdown.co
     LiveCodeComponent,
     BooksCardComponent,
     ActivityStreakComponent,
-    ContentMarkdownComponent
+    ContentMarkdownComponent,
+    StackoverflowBadgeComponent
   ],
   imports: [
     BrowserModule

@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Welcome, Button } from '@storybook/angular/demo';
+import { StackoverflowBadgeComponent } from '../app/stackoverflow-badge/stackoverflow-badge.component';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   component: Welcome,
@@ -36,6 +37,14 @@ storiesOf('Button', module)
       },
     }))
   );
+
+storiesOf('Stackoverflow Badge', module)
+  .add('Basic Tag', () => ({
+    component: StackoverflowBadgeComponent,
+    props: {
+      text: 'Stack Ratings Overview Badge',
+    },
+  }));
 
 storiesOf('Another Button', module).add('button with link to another story', () => ({
   component: Button,
